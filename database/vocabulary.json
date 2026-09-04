@@ -1,1 +1,86 @@
-[]
+[
+    {
+        "id": "02ae6112-050f-4606-9f9f-6a33daea2ed9",
+        "word": "bonjour",
+        "data": {
+            "meaning": "xin chào",
+            "gender": "#",
+            "pronunciation": "bon-zhoor"
+        },
+        "created_at": "2026-09-03T20:29:43.559288"
+    },
+    {
+        "id": "1523f205-5a2c-4e34-9203-94ced53c0ea2",
+        "word": "chat",
+        "data": {
+            "meaning": "cat",
+            "gender": "m",
+            "pronunciation": "sha"
+        },
+        "created_at": "2026-09-03T20:32:42.385194"
+    },
+    {
+        "id": "81b22e2b-39ff-4022-b906-86f9bb65b4b0",
+        "word": "maison",
+        "data": {
+            "meaning": "house",
+            "gender": "f",
+            "pronunciation": "meh-zohn"
+        },
+        "created_at": "2026-09-03T20:32:42.385208"
+    },
+    {
+        "id": "47693e88-40e9-4363-8086-156020d09998",
+        "word": "oiseau",
+        "data": {
+            "meaning": "bird",
+            "gender": "m",
+            "pronunciation": "noun"
+        },
+        "created_at": "2026-09-03T20:41:46.547030"
+    },
+    {
+        "id": "13187eca-eb88-4470-a952-c1e644c19b15",
+        "word": "bonjour",
+        "data": {
+            "meaning": "hello",
+            "gender": "#",
+            "pronunciation": "bon-zhoor",
+            "type": "expression"
+        },
+        "created_at": "2026-09-03T21:10:24.963428"
+    },
+    {
+        "id": "0cc0f1e0-4fd8-4ae8-a482-efc3c2b0a83c",
+        "word": "chat",
+        "data": {
+            "meaning": "cat",
+            "gender": "m",
+            "pronunciation": "sha",
+            "type": "noun"
+        },
+        "created_at": "2026-09-03T21:10:24.963451"
+    },
+    {
+        "id": "334d5d0e-1992-4c4a-a3a4-119864d92ded",
+        "word": "maison",
+        "data": {
+            "meaning": "house",
+            "gender": "f",
+            "pronunciation": "meh-zohn",
+            "type": "noun"
+        },
+        "created_at": "2026-09-03T21:10:24.963465"
+    },
+    {
+        "id": "df17be1b-cf92-4b87-9b1b-289749168abd",
+        "word": "cheval",
+        "data": {
+            "meaning": "ngựa",
+            "gender": "m",
+            "pronunciation": "sơ vanl",
+            "type": "n"
+        },
+        "created_at": "2026-09-03T21:15:26.948270"
+    }
+]

@@ -1,5 +1,3 @@
-from app.models.vocabulary import Vocabulary
-from app.data.database import VocabularyDatabase
 from app.data.csv_handler import load_csv
 
 
@@ -7,6 +5,13 @@ class VocabularyManager:
     def __init__(self, database):
         self.vocabulary_list = []
         self.database = database
+
+        self.field_names = [
+            "meaning",
+            "gender",
+            "pronunciation"
+            "type"
+        ]
 
     def add(self, vocabulary):
         self.vocabulary_list.append(vocabulary)
@@ -55,12 +60,28 @@ class VocabularyManager:
 
     def load(self):
         vocabulary_list = self.database.load()
+
         self.replace_all(vocabulary_list)
 
+        field_names = []
+
+        for vocabulary in vocabulary_list:
+            for field_name in vocabulary.data.keys():
+                if field_name not in field_names:
+                    field_names.append(field_name)
+
+        if field_names:
+            self.field_names = field_names
+
     def import_csv(self, file_path):
-        vocabulary_list = load_csv(file_path)
+        vocabulary_list, field_names = load_csv(file_path)
 
         for vocabulary in vocabulary_list:
             self.add(vocabulary)
+
+        if field_names:
+            self.field_names = field_names
+
+        self.save()
 
         return len(vocabulary_list)

@@ -1,4 +1,4 @@
-word,type,gender,meaning
-manger,verb,#,to eat
-chat,noun,m,cat
-table,noun,f,table
+word,meaning,gender,pronunciation,type
+bonjour,hello,#,bon-zhoor,expression
+chat,cat,m,sha,noun
+maison,house,f,meh-zohn,noun

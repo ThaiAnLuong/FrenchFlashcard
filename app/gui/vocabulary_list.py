@@ -1,5 +1,7 @@
 import tkinter as tk
-from tkinter import messagebox
+from tkinter import messagebox, ttk
+
+from app.gui.vocabulary_input import VocabularyInput
 
 
 class VocabularyList:
@@ -12,7 +14,7 @@ class VocabularyList:
 
         self.window = tk.Toplevel(parent)
         self.window.title("Vocabulary List")
-        self.window.geometry("800x600")
+        self.window.geometry("900x600")
 
         self.create_widgets()
         self.show_newest()
@@ -60,15 +62,97 @@ class VocabularyList:
         )
         delete_button.pack(side=tk.LEFT, padx=5)
 
-        self.listbox = tk.Listbox(
-            self.window,
-            font=("Arial", 16)
-        )
-        self.listbox.pack(
+        table_frame = tk.Frame(self.window)
+        table_frame.pack(
             fill=tk.BOTH,
             expand=True,
-            padx=40,
+            padx=30,
             pady=20
+        )
+
+        columns = [
+            "word",
+            "meaning",
+            "gender",
+            "pronunciation",
+            "type"
+        ]
+
+        self.tree = ttk.Treeview(
+            table_frame,
+            columns=columns,
+            show="headings"
+        )
+
+        self.tree.heading(
+            "word",
+            text="Word"
+        )
+
+        self.tree.heading(
+            "meaning",
+            text="Meaning"
+        )
+
+        self.tree.heading(
+            "gender",
+            text="Gender"
+        )
+
+        self.tree.heading(
+            "pronunciation",
+            text="Pronunciation"
+        )
+
+        self.tree.heading(
+            "type",
+            text="Type"
+        )
+
+        self.tree.column(
+            "word",
+            width=150
+        )
+
+        self.tree.column(
+            "meaning",
+            width=180
+        )
+
+        self.tree.column(
+            "gender",
+            width=80
+        )
+
+        self.tree.column(
+            "pronunciation",
+            width=180
+        )
+
+        self.tree.column(
+            "type",
+            width=120
+        )
+
+        scrollbar = ttk.Scrollbar(
+            table_frame,
+            orient=tk.VERTICAL,
+            command=self.tree.yview
+        )
+
+        self.tree.configure(
+            yscrollcommand=scrollbar.set
+        )
+
+        self.tree.pack(
+            side=tk.LEFT,
+            fill=tk.BOTH,
+            expand=True
+        )
+
+        scrollbar.pack(
+            side=tk.RIGHT,
+            fill=tk.Y
         )
 
     def show_newest(self):
@@ -86,21 +170,31 @@ class VocabularyList:
     def update_list(self, vocabulary_list):
         self.current_vocabulary_list = vocabulary_list
 
-        self.listbox.delete(0, tk.END)
+        for item in self.tree.get_children():
+            self.tree.delete(item)
 
         for vocabulary in vocabulary_list:
-            self.listbox.insert(
+            self.tree.insert(
+                "",
                 tk.END,
-                vocabulary.word
+                values=(
+                    vocabulary.word,
+                    vocabulary.get("meaning"),
+                    vocabulary.get("gender"),
+                    vocabulary.get("pronunciation"),
+                    vocabulary.get("type")
+                )
             )
 
     def get_selected_vocabulary(self):
-        selection = self.listbox.curselection()
+        selection = self.tree.selection()
 
         if not selection:
             return None
 
-        index = selection[0]
+        item_id = selection[0]
+
+        index = self.tree.index(item_id)
 
         return self.current_vocabulary_list[index]
 
@@ -114,7 +208,18 @@ class VocabularyList:
             )
             return
 
-        print("Edit:", vocabulary.word)
+        VocabularyInput(
+            self.window,
+            self.manager,
+            vocabulary
+        )
+
+        self.window.wait_window()
+
+        if self.current_sort == "a_z":
+            self.show_a_z()
+        else:
+            self.show_newest()
 
     def delete_selected(self):
         vocabulary = self.get_selected_vocabulary()

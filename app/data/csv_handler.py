@@ -5,8 +5,15 @@ from app.models.vocabulary import Vocabulary
 
 def load_csv(file_path):
     vocabulary_list = []
+    field_names = []
 
-    with open(file_path, "r", encoding="utf-8-sig", newline="") as file:
+    with open(
+        file_path,
+        "r",
+        encoding="utf-8-sig",
+        newline=""
+    ) as file:
+
         reader = csv.DictReader(file)
 
         if reader.fieldnames is None:
@@ -19,6 +26,12 @@ def load_csv(file_path):
                 "CSV file must contain a 'word' column."
             )
 
+        field_names = [
+            field
+            for field in reader.fieldnames
+            if field != "word"
+        ]
+
         for row_number, row in enumerate(reader, start=2):
             word = row["word"]
 
@@ -29,14 +42,13 @@ def load_csv(file_path):
 
             data = {}
 
-            for key, value in row.items():
-                if key == "word":
-                    continue
+            for field_name in field_names:
+                value = row.get(field_name)
 
                 if value is None or value.strip() == "":
                     value = "#"
 
-                data[key] = value
+                data[field_name] = value.strip()
 
             vocabulary = Vocabulary(
                 word.strip(),
@@ -45,4 +57,4 @@ def load_csv(file_path):
 
             vocabulary_list.append(vocabulary)
 
-    return vocabulary_list
+    return vocabulary_list, field_names
