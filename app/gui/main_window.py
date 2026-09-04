@@ -6,12 +6,13 @@ from app.gui.vocabulary_input import VocabularyInput
 
 
 class MainWindow:
-    def __init__(self, root, manager):
+    def __init__(self, root, manager, settings):
         self.root = root
         self.manager = manager
+        self.settings = settings
 
         self.root.title("French Flashcard")
-        self.root.geometry("1000x700")
+        self.root.geometry("1000x700+500+100")
         self.root.minsize(800, 600)
         self.root.configure(bg="#767676")
 
@@ -23,7 +24,10 @@ class MainWindow:
             text="French Flashcard",
             font=("Arial", 24)
         )
-        title.pack(pady=50)
+
+        title.pack(
+            pady=50
+        )
 
         list_button = tk.Button(
             self.root,
@@ -31,7 +35,10 @@ class MainWindow:
             width=25,
             command=self.open_vocabulary_list
         )
-        list_button.pack(pady=10)
+
+        list_button.pack(
+            pady=10
+        )
 
         input_button = tk.Button(
             self.root,
@@ -39,7 +46,10 @@ class MainWindow:
             width=25,
             command=self.open_vocabulary_input
         )
-        input_button.pack(pady=10)
+
+        input_button.pack(
+            pady=10
+        )
 
         csv_button = tk.Button(
             self.root,
@@ -47,12 +57,16 @@ class MainWindow:
             width=25,
             command=self.import_csv
         )
-        csv_button.pack(pady=10)
+
+        csv_button.pack(
+            pady=10
+        )
 
     def open_vocabulary_list(self):
         VocabularyList(
             self.root,
-            self.manager
+            self.manager,
+            self.settings
         )
 
     def open_vocabulary_input(self):
@@ -74,7 +88,9 @@ class MainWindow:
             return
 
         try:
-            count = self.manager.import_csv(file_path)
+            count = self.manager.import_csv(
+                file_path
+            )
 
             messagebox.showinfo(
                 "Import Complete",

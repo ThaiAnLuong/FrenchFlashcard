@@ -5,10 +5,17 @@ from app.models.vocabulary import Vocabulary
 
 
 class VocabularyInput:
-    def __init__(self, parent, manager, vocabulary=None):
+    def __init__(
+        self,
+        parent,
+        manager,
+        vocabulary=None,
+        on_close=None
+    ):
         self.parent = parent
         self.manager = manager
         self.vocabulary = vocabulary
+        self.on_close = on_close
 
         self.entries = {}
 
@@ -19,7 +26,8 @@ class VocabularyInput:
         else:
             self.window.title("Edit Vocabulary")
 
-        self.window.geometry("700x600")
+        self.window.geometry("800x750")
+        self.window.minsize(700, 600)
 
         self.create_widgets()
 
@@ -35,23 +43,82 @@ class VocabularyInput:
             text=title_text,
             font=("Arial", 24)
         )
-        title.pack(pady=20)
 
-        form_frame = tk.Frame(self.window)
-        form_frame.pack(
-            padx=40,
-            pady=10,
-            fill=tk.X
+        title.pack(
+            pady=20
         )
 
-        # Word field
+        # =========================
+        # Scrollable form
+        # =========================
+
+        container = tk.Frame(
+            self.window
+        )
+
+        container.pack(
+            fill=tk.BOTH,
+            expand=True,
+            padx=30,
+            pady=10
+        )
+
+        canvas = tk.Canvas(
+            container
+        )
+
+        scrollbar = tk.Scrollbar(
+            container,
+            orient=tk.VERTICAL,
+            command=canvas.yview
+        )
+
+        form_frame = tk.Frame(
+            canvas
+        )
+
+        form_frame.bind(
+            "<Configure>",
+            lambda event: canvas.configure(
+                scrollregion=canvas.bbox("all")
+            )
+        )
+
+        canvas.create_window(
+            (0, 0),
+            window=form_frame,
+            anchor="nw"
+        )
+
+        canvas.configure(
+            yscrollcommand=scrollbar.set
+        )
+
+        canvas.pack(
+            side=tk.LEFT,
+            fill=tk.BOTH,
+            expand=True
+        )
+
+        scrollbar.pack(
+            side=tk.RIGHT,
+            fill=tk.Y
+        )
+
+        # =========================
+        # Word
+        # =========================
+
         self.create_field(
             form_frame,
-            "word",
+            "Word",
             0
         )
 
-        # Other fields
+        # =========================
+        # Dynamic fields
+        # =========================
+
         for index, field_name in enumerate(
             self.manager.field_names,
             start=1
@@ -62,21 +129,46 @@ class VocabularyInput:
                 index
             )
 
+        # =========================
+        # Buttons
+        # =========================
+
+        button_frame = tk.Frame(
+            self.window
+        )
+
+        button_frame.pack(
+            pady=15
+        )
+
         save_button = tk.Button(
-            self.window,
+            button_frame,
             text="Save",
             width=20,
             command=self.save
         )
-        save_button.pack(pady=20)
+
+        save_button.pack(
+            side=tk.LEFT,
+            padx=5
+        )
 
         cancel_button = tk.Button(
-            self.window,
+            button_frame,
             text="Cancel",
             width=20,
-            command=self.window.destroy
+            command=self.cancel
+            
         )
-        cancel_button.pack()
+
+        cancel_button.pack(
+            side=tk.LEFT,
+            padx=5
+        )
+
+        # =========================
+        # Load existing vocabulary
+        # =========================
 
         if self.vocabulary is not None:
             self.load_vocabulary()
@@ -84,26 +176,30 @@ class VocabularyInput:
     def create_field(self, parent, field_name, row):
         label = tk.Label(
             parent,
-            text=f"{field_name}:"
+            text=f"{field_name}:",
+            font=("Arial", 11),
+            anchor="w"
         )
 
         label.grid(
             row=row,
             column=0,
             sticky="w",
-            pady=5
+            padx=10,
+            pady=6
         )
 
         entry = tk.Entry(
             parent,
-            font=("Arial", 14)
+            font=("Arial", 13)
         )
 
         entry.grid(
             row=row,
             column=1,
             sticky="ew",
-            pady=5
+            padx=10,
+            pady=6
         )
 
         parent.columnconfigure(
@@ -114,22 +210,35 @@ class VocabularyInput:
         self.entries[field_name] = entry
 
     def load_vocabulary(self):
-        self.entries["word"].insert(
+        # Word
+        self.entries["Word"].insert(
             0,
             self.vocabulary.word
         )
 
+        # Other fields
         for field_name in self.manager.field_names:
             value = self.vocabulary.get(field_name)
 
-            if value != "#":
-                self.entries[field_name].insert(
-                    0,
-                    value
-                )
+            self.entries[field_name].insert(
+                0,
+                value
+            )
+            
+            
+    def cancel(self):
+        self.window.destroy()
 
+        if self.on_close is not None:
+            self.on_close()
+            
+            
     def save(self):
-        word = self.entries["word"].get().strip()
+        # =========================
+        # Get Word
+        # =========================
+
+        word = self.entries["Word"].get().strip()
 
         if word == "":
             messagebox.showwarning(
@@ -138,31 +247,44 @@ class VocabularyInput:
             )
             return
 
+        # =========================
+        # Get vocabulary data
+        # =========================
+
         data = {}
 
         for field_name in self.manager.field_names:
             value = self.entries[field_name].get().strip()
 
+            # Blank → "-"
             if value == "":
-                value = "#"
+                value = "-"
 
             data[field_name] = value
 
+        # =========================
         # New vocabulary
+        # =========================
+
         if self.vocabulary is None:
             vocabulary = Vocabulary(
                 word=word,
                 data=data
             )
 
-            self.manager.add(vocabulary)
+            self.manager.add(
+                vocabulary
+            )
 
             messagebox.showinfo(
                 "Saved",
                 "Vocabulary added successfully."
             )
 
-        # Edit existing vocabulary
+        # =========================
+        # Edit vocabulary
+        # =========================
+
         else:
             self.manager.edit(
                 self.vocabulary,
@@ -175,6 +297,13 @@ class VocabularyInput:
                 "Vocabulary updated successfully."
             )
 
+        # =========================
+        # Save database
+        # =========================
+
         self.manager.save()
 
         self.window.destroy()
+        
+        if self.on_close is not None:
+            self.on_close()

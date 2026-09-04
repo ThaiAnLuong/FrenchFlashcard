@@ -1,0 +1,14 @@
+{
+    "visible_fields": [
+        "Type",
+        "Meaning VI",
+        "Meaning EN",
+        "Gender",
+        "Masculine",
+        "Feminine",
+        "Plural",
+        "Imparfait",
+        "Ghi chú"
+    ],
+    "practice_ids": []
+}

@@ -10,11 +10,11 @@ class Vocabulary:
         self.created_at = created_at if created_at else datetime.now().isoformat()
 
     def get(self, key):
-        return self.data.get(key, "#")
+        return self.data.get(key, "-")
 
     def set(self, key, value):
         if value is None or value.strip() == "":
-            value = "#"
+            value = "-"
 
         self.data[key] = value
 

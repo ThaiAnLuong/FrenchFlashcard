@@ -1,86 +1,904 @@
 [
     {
-        "id": "02ae6112-050f-4606-9f9f-6a33daea2ed9",
-        "word": "bonjour",
+        "id": "77ee6cee-b57f-4523-86c1-4e17fe3dec61",
+        "word": "une profession",
         "data": {
-            "meaning": "xin chào",
-            "gender": "#",
-            "pronunciation": "bon-zhoor"
+            "Type": "noun",
+            "Meaning VI": "nghề nghiệp",
+            "Meaning EN": "profession",
+            "Gender": "f",
+            "Masculine": "-",
+            "Feminine": "une profession",
+            "Plural": "des professions",
+            "Imparfait": "-",
+            "Past (PC)": "-",
+            "Present": "-",
+            "Futur simple": "-",
+            "Conditionnel": "-",
+            "Example (FR)": "Il exerce une profession médicale.",
+            "Example (VI)": "Anh ấy làm nghề y.",
+            "Ghi chú": "-"
         },
-        "created_at": "2026-09-03T20:29:43.559288"
+        "created_at": "2026-09-04T15:28:54.630410"
     },
     {
-        "id": "1523f205-5a2c-4e34-9203-94ced53c0ea2",
+        "id": "ed3b7337-7400-439e-8d65-732bade9bc34",
+        "word": "un acteur",
+        "data": {
+            "Type": "noun",
+            "Meaning VI": "diễn viên",
+            "Meaning EN": "actor",
+            "Gender": "m",
+            "Masculine": "un acteur",
+            "Feminine": "une actrice",
+            "Plural": "des acteurs/actrices",
+            "Imparfait": "-",
+            "Past (PC)": "-",
+            "Present": "-",
+            "Futur simple": "-",
+            "Conditionnel": "-",
+            "Example (FR)": "L'acteur joue bien.",
+            "Example (VI)": "Diễn viên diễn rất tốt.",
+            "Ghi chú": "-"
+        },
+        "created_at": "2026-09-04T15:28:54.630436"
+    },
+    {
+        "id": "8eb43eaf-6cf7-4251-984b-959b0b51be8c",
+        "word": "un chef",
+        "data": {
+            "Type": "noun",
+            "Meaning VI": "đầu bếp",
+            "Meaning EN": "chef",
+            "Gender": "m",
+            "Masculine": "un chef",
+            "Feminine": "une cheffe",
+            "Plural": "des chefs",
+            "Imparfait": "-",
+            "Past (PC)": "-",
+            "Present": "-",
+            "Futur simple": "-",
+            "Conditionnel": "-",
+            "Example (FR)": "Le chef cuisine bien.",
+            "Example (VI)": "Đầu bếp nấu ăn ngon.",
+            "Ghi chú": "-"
+        },
+        "created_at": "2026-09-04T15:28:54.630457"
+    },
+    {
+        "id": "0136d648-cbe5-48c6-b5b2-7bf3fbec59a9",
+        "word": "un livre",
+        "data": {
+            "Type": "noun",
+            "Meaning VI": "cuốn sách",
+            "Meaning EN": "book",
+            "Gender": "m",
+            "Masculine": "un livre",
+            "Feminine": "-",
+            "Plural": "des livres",
+            "Imparfait": "-",
+            "Past (PC)": "-",
+            "Present": "-",
+            "Futur simple": "-",
+            "Conditionnel": "-",
+            "Example (FR)": "Je lis un livre.",
+            "Example (VI)": "Tôi đọc một cuốn sách.",
+            "Ghi chú": "-"
+        },
+        "created_at": "2026-09-04T15:28:54.630465"
+    },
+    {
+        "id": "fef11003-d6d4-42e8-ab96-8d033603f20f",
+        "word": "un auteur",
+        "data": {
+            "Type": "noun",
+            "Meaning VI": "tác giả",
+            "Meaning EN": "author",
+            "Gender": "m",
+            "Masculine": "un auteur",
+            "Feminine": "une auteure",
+            "Plural": "des auteurs/auteures",
+            "Imparfait": "-",
+            "Past (PC)": "-",
+            "Present": "-",
+            "Futur simple": "-",
+            "Conditionnel": "-",
+            "Example (FR)": "L'auteur écrit un roman.",
+            "Example (VI)": "Tác giả viết tiểu thuyết.",
+            "Ghi chú": "-"
+        },
+        "created_at": "2026-09-04T15:28:54.630473"
+    },
+    {
+        "id": "0f481f61-a69f-44d0-bc01-bc1d8c1c92e7",
+        "word": "une bouche",
+        "data": {
+            "Type": "noun",
+            "Meaning VI": "miệng",
+            "Meaning EN": "mouth",
+            "Gender": "f",
+            "Masculine": "-",
+            "Feminine": "une bouche",
+            "Plural": "des bouches",
+            "Imparfait": "-",
+            "Past (PC)": "-",
+            "Present": "-",
+            "Futur simple": "-",
+            "Conditionnel": "-",
+            "Example (FR)": "Elle a une petite bouche.",
+            "Example (VI)": "Cô ấy có một cái miệng nhỏ.",
+            "Ghi chú": "-"
+        },
+        "created_at": "2026-09-04T15:28:54.630480"
+    },
+    {
+        "id": "600c120e-0ec5-441f-a8b7-badd79e30ceb",
+        "word": "une lèvre",
+        "data": {
+            "Type": "noun",
+            "Meaning VI": "môi",
+            "Meaning EN": "lip",
+            "Gender": "f",
+            "Masculine": "-",
+            "Feminine": "une lèvre",
+            "Plural": "des lèvres",
+            "Imparfait": "-",
+            "Past (PC)": "-",
+            "Present": "-",
+            "Futur simple": "-",
+            "Conditionnel": "-",
+            "Example (FR)": "Ses lèvres sont rouges.",
+            "Example (VI)": "Môi cô ấy màu đỏ.",
+            "Ghi chú": "-"
+        },
+        "created_at": "2026-09-04T15:28:54.630487"
+    },
+    {
+        "id": "d7ffa2d4-a8f8-4390-a2d1-6594578fee49",
+        "word": "tiré",
+        "data": {
+            "Type": "adj",
+            "Meaning VI": "bị kéo / căng",
+            "Meaning EN": "pulled",
+            "Gender": "-",
+            "Masculine": "tiré",
+            "Feminine": "tirée",
+            "Plural": "tirés/ tirées",
+            "Imparfait": "-",
+            "Past (PC)": "-",
+            "Present": "-",
+            "Futur simple": "-",
+            "Conditionnel": "-",
+            "Example (FR)": "Les lèvres sont tirées.",
+            "Example (VI)": "Môi bị kéo căng.",
+            "Ghi chú": "-"
+        },
+        "created_at": "2026-09-04T15:28:54.630494"
+    },
+    {
+        "id": "0066ae96-e15e-4f2c-a02c-02b2f9f3e52e",
+        "word": "arrondi",
+        "data": {
+            "Type": "adj",
+            "Meaning VI": "tròn / bo tròn",
+            "Meaning EN": "rounded",
+            "Gender": "-",
+            "Masculine": "arrondi",
+            "Feminine": "arrondie",
+            "Plural": "arrondis/ arrondies",
+            "Imparfait": "-",
+            "Past (PC)": "-",
+            "Present": "-",
+            "Futur simple": "-",
+            "Conditionnel": "-",
+            "Example (FR)": "Une forme arrondie.",
+            "Example (VI)": "Một hình dạng tròn.",
+            "Ghi chú": "-"
+        },
+        "created_at": "2026-09-04T15:28:54.630502"
+    },
+    {
+        "id": "8db2d1f3-478f-4bb4-9089-d362dc2485ae",
+        "word": "noir",
+        "data": {
+            "Type": "color",
+            "Meaning VI": "đen",
+            "Meaning EN": "black",
+            "Gender": "-",
+            "Masculine": "noir",
+            "Feminine": "noire",
+            "Plural": "noirs/noires",
+            "Imparfait": "-",
+            "Past (PC)": "-",
+            "Present": "-",
+            "Futur simple": "-",
+            "Conditionnel": "-",
+            "Example (FR)": "Une robe noire.",
+            "Example (VI)": "Một chiếc váy đen.",
+            "Ghi chú": "-"
+        },
+        "created_at": "2026-09-04T15:28:54.630509"
+    },
+    {
+        "id": "e87e2bc5-b8ac-488a-abf8-bea5dafaa4f1",
+        "word": "blanc",
+        "data": {
+            "Type": "color",
+            "Meaning VI": "trắng",
+            "Meaning EN": "white",
+            "Gender": "-",
+            "Masculine": "blanc",
+            "Feminine": "blanche",
+            "Plural": "blancs/blanches",
+            "Imparfait": "-",
+            "Past (PC)": "-",
+            "Present": "-",
+            "Futur simple": "-",
+            "Conditionnel": "-",
+            "Example (FR)": "Un chat blanc.",
+            "Example (VI)": "Một con mèo trắng.",
+            "Ghi chú": "-"
+        },
+        "created_at": "2026-09-04T15:28:54.630515"
+    },
+    {
+        "id": "efbd6968-ddf4-4629-9a25-7f8e821f6352",
+        "word": "rouge",
+        "data": {
+            "Type": "color",
+            "Meaning VI": "đỏ",
+            "Meaning EN": "red",
+            "Gender": "-",
+            "Masculine": "rouge",
+            "Feminine": "rouge",
+            "Plural": "rouges",
+            "Imparfait": "-",
+            "Past (PC)": "-",
+            "Present": "-",
+            "Futur simple": "-",
+            "Conditionnel": "-",
+            "Example (FR)": "Une voiture rouge.",
+            "Example (VI)": "Một chiếc xe màu đỏ.",
+            "Ghi chú": "masc = fem"
+        },
+        "created_at": "2026-09-04T15:28:54.630522"
+    },
+    {
+        "id": "73d352e3-87d5-439c-ad61-22188749c3b0",
+        "word": "rose",
+        "data": {
+            "Type": "color",
+            "Meaning VI": "hồng",
+            "Meaning EN": "pink",
+            "Gender": "-",
+            "Masculine": "rose",
+            "Feminine": "rose",
+            "Plural": "roses",
+            "Imparfait": "-",
+            "Past (PC)": "-",
+            "Present": "-",
+            "Futur simple": "-",
+            "Conditionnel": "-",
+            "Example (FR)": "Une robe rose.",
+            "Example (VI)": "Một chiếc váy màu hồng.",
+            "Ghi chú": "masc = fem"
+        },
+        "created_at": "2026-09-04T15:28:54.630529"
+    },
+    {
+        "id": "4f536bc6-303a-451c-9f4c-851b89e1a2f9",
+        "word": "bleu",
+        "data": {
+            "Type": "color",
+            "Meaning VI": "xanh dương",
+            "Meaning EN": "blue",
+            "Gender": "-",
+            "Masculine": "bleu",
+            "Feminine": "bleue",
+            "Plural": "bleus/bleues",
+            "Imparfait": "-",
+            "Past (PC)": "-",
+            "Present": "-",
+            "Futur simple": "-",
+            "Conditionnel": "-",
+            "Example (FR)": "Un ciel bleu.",
+            "Example (VI)": "Bầu trời xanh.",
+            "Ghi chú": "-"
+        },
+        "created_at": "2026-09-04T15:28:54.630536"
+    },
+    {
+        "id": "fe522712-f9cc-4fd5-8475-57d070de9cbd",
+        "word": "vert",
+        "data": {
+            "Type": "color",
+            "Meaning VI": "xanh lá",
+            "Meaning EN": "green",
+            "Gender": "-",
+            "Masculine": "vert",
+            "Feminine": "verte",
+            "Plural": "verts/vertes",
+            "Imparfait": "-",
+            "Past (PC)": "-",
+            "Present": "-",
+            "Futur simple": "-",
+            "Conditionnel": "-",
+            "Example (FR)": "Un arbre vert.",
+            "Example (VI)": "Cây xanh.",
+            "Ghi chú": "-"
+        },
+        "created_at": "2026-09-04T15:28:54.630542"
+    },
+    {
+        "id": "1a4de818-86b0-450e-8189-73b80931c99f",
+        "word": "jaune",
+        "data": {
+            "Type": "color",
+            "Meaning VI": "vàng",
+            "Meaning EN": "yellow",
+            "Gender": "-",
+            "Masculine": "jaune",
+            "Feminine": "jaune",
+            "Plural": "jaunes",
+            "Imparfait": "-",
+            "Past (PC)": "-",
+            "Present": "-",
+            "Futur simple": "-",
+            "Conditionnel": "-",
+            "Example (FR)": "Un sac jaune.",
+            "Example (VI)": "Một cái túi màu vàng.",
+            "Ghi chú": "masc = fem"
+        },
+        "created_at": "2026-09-04T15:28:54.630549"
+    },
+    {
+        "id": "36273e04-33ba-4757-b8fc-fe645b1b7ab8",
+        "word": "orange",
+        "data": {
+            "Type": "color",
+            "Meaning VI": "cam",
+            "Meaning EN": "orange",
+            "Gender": "-",
+            "Masculine": "orange",
+            "Feminine": "orange",
+            "Plural": "orange",
+            "Imparfait": "-",
+            "Past (PC)": "-",
+            "Present": "-",
+            "Futur simple": "-",
+            "Conditionnel": "-",
+            "Example (FR)": "Un fruit orange.",
+            "Example (VI)": "Một quả màu cam.",
+            "Ghi chú": "invariable"
+        },
+        "created_at": "2026-09-04T15:28:54.630555"
+    },
+    {
+        "id": "dae3b358-f629-48c5-b5dd-2dbb1424b71c",
+        "word": "violet",
+        "data": {
+            "Type": "color",
+            "Meaning VI": "tím",
+            "Meaning EN": "purple",
+            "Gender": "-",
+            "Masculine": "violet",
+            "Feminine": "violette",
+            "Plural": "violets/violettes",
+            "Imparfait": "-",
+            "Past (PC)": "-",
+            "Present": "-",
+            "Futur simple": "-",
+            "Conditionnel": "-",
+            "Example (FR)": "Une fleur violette.",
+            "Example (VI)": "Một bông hoa tím.",
+            "Ghi chú": "-"
+        },
+        "created_at": "2026-09-04T15:28:54.630561"
+    },
+    {
+        "id": "c863ce62-0bf8-40eb-9e76-59f344016409",
+        "word": "gris",
+        "data": {
+            "Type": "color",
+            "Meaning VI": "xám",
+            "Meaning EN": "gray",
+            "Gender": "-",
+            "Masculine": "gris",
+            "Feminine": "grise",
+            "Plural": "gris/grises",
+            "Imparfait": "-",
+            "Past (PC)": "-",
+            "Present": "-",
+            "Futur simple": "-",
+            "Conditionnel": "-",
+            "Example (FR)": "Un pantalon gris.",
+            "Example (VI)": "Một cái quần xám.",
+            "Ghi chú": "masc singulier = pluriel"
+        },
+        "created_at": "2026-09-04T15:28:54.630568"
+    },
+    {
+        "id": "29770929-f8d9-4e1d-94d2-1e2f59d74137",
+        "word": "marron",
+        "data": {
+            "Type": "color",
+            "Meaning VI": "nâu",
+            "Meaning EN": "brown",
+            "Gender": "-",
+            "Masculine": "marron",
+            "Feminine": "marron",
+            "Plural": "marron",
+            "Imparfait": "-",
+            "Past (PC)": "-",
+            "Present": "-",
+            "Futur simple": "-",
+            "Conditionnel": "-",
+            "Example (FR)": "Un sac marron.",
+            "Example (VI)": "Một cái túi màu nâu.",
+            "Ghi chú": "invariable"
+        },
+        "created_at": "2026-09-04T15:28:54.630574"
+    },
+    {
+        "id": "12d6542e-f63f-4926-839d-294d3b46989b",
+        "word": "un photojournaliste",
+        "data": {
+            "Type": "noun",
+            "Meaning VI": "phóng viên ảnh",
+            "Meaning EN": "-",
+            "Gender": "m",
+            "Masculine": "un photojournaliste",
+            "Feminine": "une photojournaliste",
+            "Plural": "des photojournalistes",
+            "Imparfait": "-",
+            "Past (PC)": "-",
+            "Present": "-",
+            "Futur simple": "-",
+            "Conditionnel": "-",
+            "Example (FR)": "-",
+            "Example (VI)": "-",
+            "Ghi chú": "masc = fem"
+        },
+        "created_at": "2026-09-04T15:28:54.630581"
+    },
+    {
+        "id": "d7a15587-a8be-44e9-92c3-f25be4e4a926",
+        "word": "Le pays",
+        "data": {
+            "Type": "noun",
+            "Meaning VI": "đất nước, quốc gia",
+            "Meaning EN": "country",
+            "Gender": "m",
+            "Masculine": "un pays",
+            "Feminine": "-",
+            "Plural": "des pays",
+            "Imparfait": "-",
+            "Past (PC)": "-",
+            "Present": "-",
+            "Futur simple": "-",
+            "Conditionnel": "-",
+            "Example (FR)": "Le pays est grand.",
+            "Example (VI)": "Đất nước này lớn.",
+            "Ghi chú": "-"
+        },
+        "created_at": "2026-09-04T15:28:54.630588"
+    },
+    {
+        "id": "6f002d11-4f35-4c57-8bac-677f49700d98",
+        "word": "La nationalité",
+        "data": {
+            "Type": "noun",
+            "Meaning VI": "quốc tịch",
+            "Meaning EN": "nationality",
+            "Gender": "f",
+            "Masculine": "-",
+            "Feminine": "une nationalité",
+            "Plural": "des nationalités",
+            "Imparfait": "-",
+            "Past (PC)": "-",
+            "Present": "-",
+            "Futur simple": "-",
+            "Conditionnel": "-",
+            "Example (FR)": "Il a la nationalité canadienne.",
+            "Example (VI)": "Anh ấy có quốc tịch Canada.",
+            "Ghi chú": "-"
+        },
+        "created_at": "2026-09-04T15:28:54.630595"
+    },
+    {
+        "id": "76d8719f-37cc-4a92-be19-79b5e5a699bc",
+        "word": "Parmi",
+        "data": {
+            "Type": "preposition",
+            "Meaning VI": "trong số",
+            "Meaning EN": "among",
+            "Gender": "-",
+            "Masculine": "-",
+            "Feminine": "-",
+            "Plural": "-",
+            "Imparfait": "-",
+            "Past (PC)": "-",
+            "Present": "-",
+            "Futur simple": "-",
+            "Conditionnel": "-",
+            "Example (FR)": "Parmi les étudiants, elle est la plus jeune.",
+            "Example (VI)": "Trong số các học sinh, cô ấy trẻ nhất.",
+            "Ghi chú": "-"
+        },
+        "created_at": "2026-09-04T15:28:54.630602"
+    },
+    {
+        "id": "2827ade0-524c-438f-ab70-cec0e396e976",
+        "word": "Une écrivaine",
+        "data": {
+            "Type": "noun",
+            "Meaning VI": "nữ nhà văn",
+            "Meaning EN": "writer",
+            "Gender": "f",
+            "Masculine": "-",
+            "Feminine": "une écrivaine",
+            "Plural": "des écrivaines",
+            "Imparfait": "-",
+            "Past (PC)": "-",
+            "Present": "-",
+            "Futur simple": "-",
+            "Conditionnel": "-",
+            "Example (FR)": "Cette écrivaine est célèbre.",
+            "Example (VI)": "Nữ nhà văn này nổi tiếng.",
+            "Ghi chú": "-"
+        },
+        "created_at": "2026-09-04T15:28:54.630609"
+    },
+    {
+        "id": "31768f44-11e7-406a-823f-9274af94b9bc",
+        "word": "L’âge",
+        "data": {
+            "Type": "noun",
+            "Meaning VI": "tuổi",
+            "Meaning EN": "age",
+            "Gender": "m",
+            "Masculine": "un âge",
+            "Feminine": "-",
+            "Plural": "des âges",
+            "Imparfait": "-",
+            "Past (PC)": "-",
+            "Present": "-",
+            "Futur simple": "-",
+            "Conditionnel": "-",
+            "Example (FR)": "L’âge est important ici.",
+            "Example (VI)": "Tuổi tác quan trọng ở đây.",
+            "Ghi chú": "-"
+        },
+        "created_at": "2026-09-04T15:28:54.630623"
+    },
+    {
+        "id": "b75e1d5f-7a0b-4c6d-b17c-98375e61759d",
+        "word": "Un an",
+        "data": {
+            "Type": "noun",
+            "Meaning VI": "năm",
+            "Meaning EN": "year",
+            "Gender": "m",
+            "Masculine": "un an",
+            "Feminine": "-",
+            "Plural": "des ans",
+            "Imparfait": "-",
+            "Past (PC)": "-",
+            "Present": "-",
+            "Futur simple": "-",
+            "Conditionnel": "-",
+            "Example (FR)": "Il a vingt ans.",
+            "Example (VI)": "Anh ấy 20 tuổi.",
+            "Ghi chú": "-"
+        },
+        "created_at": "2026-09-04T15:28:54.630629"
+    },
+    {
+        "id": "4e8e36fd-5635-4107-8b46-a081222d9e4e",
+        "word": "Un mois",
+        "data": {
+            "Type": "noun",
+            "Meaning VI": "tháng",
+            "Meaning EN": "month",
+            "Gender": "m",
+            "Masculine": "un mois",
+            "Feminine": "-",
+            "Plural": "des mois",
+            "Imparfait": "-",
+            "Past (PC)": "-",
+            "Present": "-",
+            "Futur simple": "-",
+            "Conditionnel": "-",
+            "Example (FR)": "Le cours dure un mois.",
+            "Example (VI)": "Khóa học kéo dài một tháng.",
+            "Ghi chú": "-"
+        },
+        "created_at": "2026-09-04T15:28:54.630636"
+    },
+    {
+        "id": "1f9b089e-011e-4b92-866d-c6b727275322",
+        "word": "Heureux / heureuse",
+        "data": {
+            "Type": "adj",
+            "Meaning VI": "vui vẻ, hạnh phúc",
+            "Meaning EN": "happy",
+            "Gender": "-",
+            "Masculine": "heureux",
+            "Feminine": "heureuse",
+            "Plural": "heureux/heureuses",
+            "Imparfait": "-",
+            "Past (PC)": "-",
+            "Present": "-",
+            "Futur simple": "-",
+            "Conditionnel": "-",
+            "Example (FR)": "Elle est heureuse aujourd’hui.",
+            "Example (VI)": "Hôm nay cô ấy vui.",
+            "Ghi chú": "-"
+        },
+        "created_at": "2026-09-04T15:28:54.630645"
+    },
+    {
+        "id": "d0fdfb91-ff2c-47b0-95f6-0fe38ba8c69c",
+        "word": "Triste",
+        "data": {
+            "Type": "adj",
+            "Meaning VI": "buồn",
+            "Meaning EN": "sad",
+            "Gender": "-",
+            "Masculine": "triste",
+            "Feminine": "triste",
+            "Plural": "tristes",
+            "Imparfait": "-",
+            "Past (PC)": "-",
+            "Present": "-",
+            "Futur simple": "-",
+            "Conditionnel": "-",
+            "Example (FR)": "Il semble triste.",
+            "Example (VI)": "Anh ấy có vẻ buồn.",
+            "Ghi chú": "-"
+        },
+        "created_at": "2026-09-04T15:28:54.630651"
+    },
+    {
+        "id": "6b596224-fb45-47b4-aef3-540830acd142",
+        "word": "Content(e)",
+        "data": {
+            "Type": "adj",
+            "Meaning VI": "vui, hài lòng",
+            "Meaning EN": "glad, satisfied",
+            "Gender": "-",
+            "Masculine": "content",
+            "Feminine": "contente",
+            "Plural": "contents/contentes",
+            "Imparfait": "-",
+            "Past (PC)": "-",
+            "Present": "-",
+            "Futur simple": "-",
+            "Conditionnel": "-",
+            "Example (FR)": "Nous sommes contents.",
+            "Example (VI)": "Chúng tôi hài lòng.",
+            "Ghi chú": "-"
+        },
+        "created_at": "2026-09-04T15:28:54.630658"
+    },
+    {
+        "id": "67671176-ac1f-4b90-998c-b0b9af846cdb",
+        "word": "Être en forme",
+        "data": {
+            "Type": "expression",
+            "Meaning VI": "khỏe mạnh",
+            "Meaning EN": "to be fit",
+            "Gender": "-",
+            "Masculine": "-",
+            "Feminine": "-",
+            "Plural": "-",
+            "Imparfait": "-",
+            "Past (PC)": "-",
+            "Present": "-",
+            "Futur simple": "-",
+            "Conditionnel": "-",
+            "Example (FR)": "Je suis en forme aujourd’hui.",
+            "Example (VI)": "Hôm nay tôi khỏe.",
+            "Ghi chú": "-"
+        },
+        "created_at": "2026-09-04T15:28:54.630665"
+    },
+    {
+        "id": "b26280c0-c9c6-4211-8565-53a629f5603e",
+        "word": "Chaud",
+        "data": {
+            "Type": "adj",
+            "Meaning VI": "nóng",
+            "Meaning EN": "hot",
+            "Gender": "-",
+            "Masculine": "chaud",
+            "Feminine": "chaude",
+            "Plural": "chauds/chaudes",
+            "Imparfait": "-",
+            "Past (PC)": "-",
+            "Present": "-",
+            "Futur simple": "-",
+            "Conditionnel": "-",
+            "Example (FR)": "Il fait chaud en été.",
+            "Example (VI)": "Mùa hè trời nóng.",
+            "Ghi chú": "le chaud (n, m)/ les chauds"
+        },
+        "created_at": "2026-09-04T15:28:54.630672"
+    },
+    {
+        "id": "b173307f-cec4-4ddd-830e-fda4f8ed8ab9",
+        "word": "Faim",
+        "data": {
+            "Type": "noun",
+            "Meaning VI": "đói",
+            "Meaning EN": "hunger",
+            "Gender": "f",
+            "Masculine": "-",
+            "Feminine": "une faim",
+            "Plural": "des faims",
+            "Imparfait": "-",
+            "Past (PC)": "-",
+            "Present": "-",
+            "Futur simple": "-",
+            "Conditionnel": "-",
+            "Example (FR)": "J’ai faim maintenant.",
+            "Example (VI)": "Bây giờ tôi đói.",
+            "Ghi chú": "-"
+        },
+        "created_at": "2026-09-04T15:28:54.630679"
+    },
+    {
+        "id": "7fc98242-44a4-449f-bfbe-7c63eb341621",
+        "word": "Froid",
+        "data": {
+            "Type": "adj",
+            "Meaning VI": "lạnh",
+            "Meaning EN": "cold",
+            "Gender": "-",
+            "Masculine": "froid",
+            "Feminine": "froide",
+            "Plural": "froids/froides",
+            "Imparfait": "-",
+            "Past (PC)": "-",
+            "Present": "-",
+            "Futur simple": "-",
+            "Conditionnel": "-",
+            "Example (FR)": "L’eau est froide.",
+            "Example (VI)": "Nước lạnh.",
+            "Ghi chú": "le froid(n, m) - cái lạnh"
+        },
+        "created_at": "2026-09-04T15:28:54.630685"
+    },
+    {
+        "id": "95ee1bce-1f1e-4831-9e65-060d5024b250",
+        "word": "Soif",
+        "data": {
+            "Type": "noun",
+            "Meaning VI": "khát",
+            "Meaning EN": "thirst",
+            "Gender": "f",
+            "Masculine": "-",
+            "Feminine": "une soif",
+            "Plural": "des soifs",
+            "Imparfait": "-",
+            "Past (PC)": "-",
+            "Present": "-",
+            "Futur simple": "-",
+            "Conditionnel": "-",
+            "Example (FR)": "Elle a soif après le sport.",
+            "Example (VI)": "Cô ấy khát sau khi chơi thể thao.",
+            "Ghi chú": "-"
+        },
+        "created_at": "2026-09-04T15:28:54.630692"
+    },
+    {
+        "id": "4b9fd406-2983-47e2-8686-9f1308d80a05",
+        "word": "Un architecte",
+        "data": {
+            "Type": "noun",
+            "Meaning VI": "kiến trúc sư",
+            "Meaning EN": "architect",
+            "Gender": "m",
+            "Masculine": "un architecte",
+            "Feminine": "une architecte",
+            "Plural": "des architectes",
+            "Imparfait": "-",
+            "Past (PC)": "-",
+            "Present": "-",
+            "Futur simple": "-",
+            "Conditionnel": "-",
+            "Example (FR)": "L’architecte dessine une maison.",
+            "Example (VI)": "Kiến trúc sư thiết kế một ngôi nhà.",
+            "Ghi chú": "-"
+        },
+        "created_at": "2026-09-04T15:28:54.630699"
+    },
+    {
+        "id": "38003e0c-6a27-42a0-8570-f849dc105f9d",
+        "word": "Un pâtissier / une pâtissière",
+        "data": {
+            "Type": "noun",
+            "Meaning VI": "thợ làm bánh",
+            "Meaning EN": "pastry chef",
+            "Gender": "m",
+            "Masculine": "un pâtissier",
+            "Feminine": "une pâtissière",
+            "Plural": "des pâtissiers/pâtissières",
+            "Imparfait": "-",
+            "Past (PC)": "-",
+            "Present": "-",
+            "Futur simple": "-",
+            "Conditionnel": "-",
+            "Example (FR)": "La pâtissière prépare un gâteau.",
+            "Example (VI)": "Người thợ làm bánh chuẩn bị một chiếc bánh.",
+            "Ghi chú": "-"
+        },
+        "created_at": "2026-09-04T15:28:54.630707"
+    },
+    {
+        "id": "8f2c2ac5-7d69-4f59-ad5e-ecee7b7aabdd",
+        "word": "Un objet",
+        "data": {
+            "Type": "noun",
+            "Meaning VI": "đồ vật",
+            "Meaning EN": "object",
+            "Gender": "m",
+            "Masculine": "un objet",
+            "Feminine": "-",
+            "Plural": "des objets",
+            "Imparfait": "-",
+            "Past (PC)": "-",
+            "Present": "-",
+            "Futur simple": "-",
+            "Conditionnel": "-",
+            "Example (FR)": "C’est un objet important.",
+            "Example (VI)": "Đó là một đồ vật quan trọng.",
+            "Ghi chú": "abc"
+        },
+        "created_at": "2026-09-04T15:28:54.630716"
+    },
+    {
+        "id": "4336cf0b-50e9-4977-bb75-d79f15fc26ff",
+        "word": "Un stylo",
+        "data": {
+            "Type": "noun",
+            "Meaning VI": "bút (có mực)",
+            "Meaning EN": "pen",
+            "Gender": "m",
+            "Masculine": "un stylo",
+            "Feminine": "-",
+            "Plural": "des stylos",
+            "Imparfait": "-",
+            "Past (PC)": "-",
+            "Present": "-",
+            "Futur simple": "-",
+            "Conditionnel": "-",
+            "Example (FR)": "J’écris avec un stylo.",
+            "Example (VI)": "Tôi viết bằng bút mực.",
+            "Ghi chú": "abcz"
+        },
+        "created_at": "2026-09-04T15:28:54.630723"
+    },
+    {
+        "id": "aec93cac-ab5e-4210-8e22-45f9e56e3f53",
         "word": "chat",
         "data": {
-            "meaning": "cat",
-            "gender": "m",
-            "pronunciation": "sha"
+            "Type": "-",
+            "Meaning VI": "-",
+            "Meaning EN": "-",
+            "Gender": "-",
+            "Masculine": "-",
+            "Feminine": "-",
+            "Plural": "-",
+            "Imparfait": "-",
+            "Past (PC)": "-",
+            "Present": "-",
+            "Futur simple": "-",
+            "Conditionnel": "-",
+            "Example (FR)": "-",
+            "Example (VI)": "-",
+            "Ghi chú": "abc"
         },
-        "created_at": "2026-09-03T20:32:42.385194"
-    },
-    {
-        "id": "81b22e2b-39ff-4022-b906-86f9bb65b4b0",
-        "word": "maison",
-        "data": {
-            "meaning": "house",
-            "gender": "f",
-            "pronunciation": "meh-zohn"
-        },
-        "created_at": "2026-09-03T20:32:42.385208"
-    },
-    {
-        "id": "47693e88-40e9-4363-8086-156020d09998",
-        "word": "oiseau",
-        "data": {
-            "meaning": "bird",
-            "gender": "m",
-            "pronunciation": "noun"
-        },
-        "created_at": "2026-09-03T20:41:46.547030"
-    },
-    {
-        "id": "13187eca-eb88-4470-a952-c1e644c19b15",
-        "word": "bonjour",
-        "data": {
-            "meaning": "hello",
-            "gender": "#",
-            "pronunciation": "bon-zhoor",
-            "type": "expression"
-        },
-        "created_at": "2026-09-03T21:10:24.963428"
-    },
-    {
-        "id": "0cc0f1e0-4fd8-4ae8-a482-efc3c2b0a83c",
-        "word": "chat",
-        "data": {
-            "meaning": "cat",
-            "gender": "m",
-            "pronunciation": "sha",
-            "type": "noun"
-        },
-        "created_at": "2026-09-03T21:10:24.963451"
-    },
-    {
-        "id": "334d5d0e-1992-4c4a-a3a4-119864d92ded",
-        "word": "maison",
-        "data": {
-            "meaning": "house",
-            "gender": "f",
-            "pronunciation": "meh-zohn",
-            "type": "noun"
-        },
-        "created_at": "2026-09-03T21:10:24.963465"
-    },
-    {
-        "id": "df17be1b-cf92-4b87-9b1b-289749168abd",
-        "word": "cheval",
-        "data": {
-            "meaning": "ngựa",
-            "gender": "m",
-            "pronunciation": "sơ vanl",
-            "type": "n"
-        },
-        "created_at": "2026-09-03T21:15:26.948270"
+        "created_at": "2026-09-04T16:30:50.002044"
     }
 ]

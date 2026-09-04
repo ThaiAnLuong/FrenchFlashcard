@@ -7,10 +7,21 @@ class VocabularyManager:
         self.database = database
 
         self.field_names = [
-            "meaning",
-            "gender",
-            "pronunciation"
-            "type"
+            "Type",
+            "Meaning VI",
+            "Meaning EN",
+            "Gender",
+            "Masculine",
+            "Feminine",
+            "Plural",
+            "Imparfait",
+            "Past (PC)",
+            "Present",
+            "Futur simple",
+            "Conditionnel",
+            "Example (FR)",
+            "Example (VI)",
+            "Ghi chú"
         ]
 
     def add(self, vocabulary):
@@ -56,31 +67,27 @@ class VocabularyManager:
         self.vocabulary_list = vocabulary_list
 
     def save(self):
-        self.database.save(self.vocabulary_list)
+        self.database.save(
+            self.vocabulary_list
+        )
 
     def load(self):
         vocabulary_list = self.database.load()
 
-        self.replace_all(vocabulary_list)
-
-        field_names = []
-
-        for vocabulary in vocabulary_list:
-            for field_name in vocabulary.data.keys():
-                if field_name not in field_names:
-                    field_names.append(field_name)
-
-        if field_names:
-            self.field_names = field_names
+        self.replace_all(
+            vocabulary_list
+        )
 
     def import_csv(self, file_path):
-        vocabulary_list, field_names = load_csv(file_path)
+        vocabulary_list, field_names = load_csv(
+            file_path
+        )
 
         for vocabulary in vocabulary_list:
             self.add(vocabulary)
 
-        if field_names:
-            self.field_names = field_names
+        # Only use fields defined by the current CSV.
+        self.field_names = field_names
 
         self.save()
 
