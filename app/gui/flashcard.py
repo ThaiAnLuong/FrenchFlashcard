@@ -45,13 +45,8 @@ class Flashcard:
 
         self.window = tk.Toplevel(parent)
         self.window.title("Flashcard")
-        self.window.geometry(
-            "1500x950+210+30"
-        )
-        self.window.minsize(
-            1000,
-            700
-        )
+        self.window.geometry("1200x880+350+100")
+        self.window.minsize(900,700)
 
         self.create_widgets()
         self.show_front()
@@ -76,20 +71,11 @@ class Flashcard:
         # Title
         # =========================
 
-        title = tk.Label(
-            self.window,
-            text="Flashcard",
-            font=("Arial", 24)
-        )
 
-        title.pack(
-            pady=20
-        )
-        
         self.progress_label = tk.Label(
         self.window,
         text="0 / 0",
-        font=("Arial", 12)
+        font=("Arial", 12, "bold")
         )
 
         self.progress_label.pack(pady=5)
@@ -217,38 +203,27 @@ class Flashcard:
             padx=3
         )
 
+        
+        
+        
         # =========================
-        # Practice
-        # =========================
-
-        practice_frame = tk.Frame(
-            self.window
-        )
-
-        practice_frame.pack(
-            pady=5
-        )
-
-        self.practice_toggle_button = tk.Button(
-            practice_frame,
-            width=25,
-            command=self.toggle_practice
-        )
-
-        self.practice_toggle_button.pack(
-            padx=5
-        )
-
-        # =========================
-        # Flip / Close
+        # Flip / Close / add practice
         # =========================
 
         button_frame = tk.Frame(
             self.window
         )
-
         button_frame.pack(
-            pady=15
+            pady=5
+        )
+
+        self.practice_toggle_button = tk.Button(
+            button_frame,
+            width=25,
+            command=self.toggle_practice
+        )
+        self.practice_toggle_button.pack(
+            padx=5
         )
 
         self.flip_button = tk.Button(
@@ -263,17 +238,6 @@ class Flashcard:
             padx=5
         )
 
-        close_button = tk.Button(
-            button_frame,
-            text="Close",
-            width=20,
-            command=self.window.destroy
-        )
-
-        close_button.pack(
-            side=tk.LEFT,
-            padx=5
-        )
 
     def clear_content(self):
         for widget in self.content_frame.winfo_children():
@@ -453,7 +417,7 @@ class Flashcard:
         word_label = tk.Label(
             self.content_frame,
             text=vocabulary.word,
-            font=("Arial", 36, "bold"),
+            font=("Arial", 50, "bold"),
             wraplength=1200
         )
 
@@ -485,12 +449,12 @@ class Flashcard:
         word_label = tk.Label(
             self.content_frame,
             text=vocabulary.word,
-            font=("Arial", 36, "bold"),
+            font=("Arial", 26, "bold"),
             wraplength=1200
         )
 
         word_label.pack(
-            pady=20
+            
         )
 
         # =========================
@@ -504,7 +468,7 @@ class Flashcard:
         main_frame.pack(
             fill=tk.BOTH,
             expand=True,
-            padx=30,
+            padx=20,
             pady=10
         )
 
