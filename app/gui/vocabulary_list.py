@@ -46,7 +46,10 @@ class VocabularyList:
             ]
 
         self.window = tk.Toplevel(parent)
-
+        
+        #bg cua main window
+        self.window.configure(bg="#969696")
+        
         self.window.title(
             "Vocabulary List"
         )
@@ -215,7 +218,7 @@ class VocabularyList:
 
         self.canvas = tk.Canvas(
             table_frame,
-            bg="white",
+            bg="#9B9B9B",
             highlightthickness=0
         )
 
@@ -526,7 +529,10 @@ class VocabularyList:
                 x + width,
                 y + row_height,
                 outline="",
-                fill="white"
+                fill=("#FFF3CD"
+                    if self.settings.is_in_practice(vocabulary.id)
+                    else "#FFFFFF"
+                )
             )
 
             self.row_items[
@@ -695,9 +701,21 @@ class VocabularyList:
 
         if self.selected_row is not None:
 
+            old_vocabulary = self.current_vocabulary_list[
+                self.selected_row
+            ]
+
+            old_background = (
+                "#FFF3CD"
+                if self.settings.is_in_practice(
+                    old_vocabulary.id
+                )
+                else "white"
+            )
+
             self.set_row_background(
                 self.selected_row,
-                "white"
+                old_background
             )
 
         # New selection
@@ -710,7 +728,9 @@ class VocabularyList:
         )
 
         self.update_practice_button()
-
+        
+        
+        
     def set_row_background(
         self,
         row_index,

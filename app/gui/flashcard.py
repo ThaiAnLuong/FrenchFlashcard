@@ -44,12 +44,46 @@ class Flashcard:
         self.is_flipped = False
 
         self.window = tk.Toplevel(parent)
+        
+        #bg cua main window
+        self.window.configure(bg="#969696")
+        
         self.window.title("Flashcard")
-        self.window.geometry("1200x880+350+100")
+        self.window.geometry("1200x855+350+100")
         self.window.minsize(900,700)
 
         self.create_widgets()
         self.show_front()
+        # =========================
+        # Keyboard controls
+        # =========================
+
+        self.window.bind(
+            "<space>",
+            lambda event: self.flip()
+        )
+
+        self.window.bind(
+            "<Left>",
+            lambda event: self.previous()
+        )
+
+        self.window.bind(
+            "<Up>",
+            lambda event: self.random()
+        )
+
+        self.window.bind(
+            "<Right>",
+            lambda event: self.next()
+        )
+
+        self.window.bind(
+            "<Down>",
+            lambda event: self.toggle_practice()
+        )
+
+        self.window.focus_force()
 
     def get_study_list(self):
         if self.study_mode == "all":
@@ -169,7 +203,7 @@ class Flashcard:
 
         previous_button = tk.Button(
             navigation_frame,
-            text="Previous",
+            text="(<) Previous",
             width=12,
             command=self.previous
         )
@@ -181,7 +215,7 @@ class Flashcard:
 
         random_button = tk.Button(
             navigation_frame,
-            text="Random",
+            text="Random (^)",
             width=12,
             command=self.random
         )
@@ -193,7 +227,7 @@ class Flashcard:
 
         next_button = tk.Button(
             navigation_frame,
-            text="Next",
+            text="Next (>)",
             width=12,
             command=self.next
         )
@@ -223,12 +257,13 @@ class Flashcard:
             command=self.toggle_practice
         )
         self.practice_toggle_button.pack(
+            side=tk.LEFT,
             padx=5
         )
 
         self.flip_button = tk.Button(
             button_frame,
-            text="Flip",
+            text="Flip (space)",
             width=20,
             command=self.flip
         )
@@ -260,11 +295,11 @@ class Flashcard:
             vocabulary.id
         ):
             self.practice_toggle_button.config(
-                text="Remove from Practice"
+                text="Remove from Practice (v)"
             )
         else:
             self.practice_toggle_button.config(
-                text="Add to Practice"
+                text="Add to Practice (v)"
             )
 
     def toggle_practice(self):
@@ -426,7 +461,7 @@ class Flashcard:
         )
 
         self.flip_button.config(
-            text="Flip"
+            text="Flip (space)"
         )
 
         self.update_practice_button()
@@ -580,7 +615,7 @@ class Flashcard:
         # Right side - Image
         # =========================
 
-        image_frame = tk.Frame(
+        self.image_frame = tk.Frame(
             main_frame,
             width=500,
             height=400,
@@ -588,12 +623,12 @@ class Flashcard:
             borderwidth=2
         )
 
-        image_frame.pack(
+        self.image_frame.pack(
             side=tk.RIGHT,
             padx=(20, 0)
         )
 
-        image_frame.pack_propagate(
+        self.image_frame.pack_propagate(
             False
         )
 
@@ -601,7 +636,7 @@ class Flashcard:
 
         if self.current_image is not None:
             image_label = tk.Label(
-                image_frame,
+                self.image_frame,
                 image=self.current_image
             )
 
@@ -611,7 +646,7 @@ class Flashcard:
 
         else:
             choose_image_button = tk.Button(
-                image_frame,
+                self.image_frame,
                 text="Choose Image",
                 command=lambda: self.choose_image(
                     vocabulary
@@ -625,7 +660,7 @@ class Flashcard:
         # =========================
 
         self.flip_button.config(
-            text="Flip Back"
+            text="Flip Back (space)"
         )
 
         self.update_practice_button()
@@ -698,8 +733,26 @@ class Flashcard:
 
         print("IMAGE SAVED:", image_path)
 
-        messagebox.showinfo(
-            "Image Saved",
-            "Image saved successfully.",
-            parent=self.window
+        # Load ảnh vừa chọn
+        self.current_image = self.image_manager.create_photo_image(
+            image_path,
+            max_width=500,
+            max_height=400
+        )
+
+        if self.current_image is None:
+            return
+
+        # Xóa nút Choose Image
+        for widget in self.image_frame.winfo_children():
+            widget.destroy()
+
+        # Hiển thị ảnh ngay
+        image_label = tk.Label(
+            self.image_frame,
+            image=self.current_image
+        )
+
+        image_label.pack(
+            expand=True
         )
