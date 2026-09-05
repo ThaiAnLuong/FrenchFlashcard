@@ -4,6 +4,7 @@ from tkinter import messagebox
 
 from app.gui.vocabulary_input import VocabularyInput
 from app.gui.flashcard import Flashcard
+from app.services.image_manager import ImageManager
 
 
 class VocabularyList:
@@ -23,6 +24,7 @@ class VocabularyList:
         self.selected_row = None
         self.row_items = {}
         self.mouse_over_table = False
+        self.image_manager = ImageManager()
 
         # Load saved column visibility
         saved_settings = self.settings.load()
@@ -989,6 +991,8 @@ class VocabularyList:
         self.manager.delete(
             vocabulary
         )
+        
+        self.image_manager.delete_image(vocabulary.id)
 
         self.manager.save()
 
@@ -1017,26 +1021,34 @@ class VocabularyList:
     # ==================================================
 
     def open_flashcard(self):
+        vocabulary = self.get_selected_vocabulary()
 
-        vocabulary_list = (
-            self.manager.get_all()
-        )
+        if vocabulary is None:
+            messagebox.showwarning(
+                "No Selection",
+                "Please select a vocabulary first.",
+                parent=self.window
+            )
+            return
+
+        vocabulary_list = self.manager.sort_newest()
 
         if not vocabulary_list:
-
             messagebox.showwarning(
                 "No Vocabulary",
-                "There are no vocabulary items to study."
+                "There are no vocabulary items to study.",
+                parent=self.window
             )
-
             return
 
         Flashcard(
             self.window,
             self.manager,
             vocabulary_list,
-            None,
-            self.settings
+            start_vocabulary=vocabulary,
+            settings=self.settings,
+            on_practice_changed=self.refresh_after_practice_change,
+            study_mode="all"
         )
 
     # ==================================================

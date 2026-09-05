@@ -2,7 +2,6 @@ import tkinter as tk
 from tkinter import messagebox
 
 from app.services.study_session import StudySession
-from app.services.image_search import ImageSearch
 from app.services.image_manager import ImageManager
 
 
@@ -25,7 +24,6 @@ class Flashcard:
         self.on_practice_changed = on_practice_changed
         self.study_mode = study_mode
         
-        self.image_search = ImageSearch()
         self.image_manager = ImageManager()
         self.current_image = None
         
@@ -481,15 +479,57 @@ class Flashcard:
             return
 
         # =========================
-        # Scrollable back side
+        # Word
         # =========================
 
-        canvas = tk.Canvas(
+        word_label = tk.Label(
+            self.content_frame,
+            text=vocabulary.word,
+            font=("Arial", 36, "bold"),
+            wraplength=1200
+        )
+
+        word_label.pack(
+            pady=20
+        )
+
+        # =========================
+        # Main content
+        # =========================
+
+        main_frame = tk.Frame(
             self.content_frame
         )
 
+        main_frame.pack(
+            fill=tk.BOTH,
+            expand=True,
+            padx=30,
+            pady=10
+        )
+
+        # =========================
+        # Left side - Information
+        # =========================
+
+        info_container = tk.Frame(
+            main_frame
+        )
+
+        info_container.pack(
+            side=tk.LEFT,
+            fill=tk.BOTH,
+            expand=True
+        )
+
+        # Scrollable information
+
+        canvas = tk.Canvas(
+            info_container
+        )
+
         scrollbar = tk.Scrollbar(
-            self.content_frame,
+            info_container,
             orient=tk.VERTICAL,
             command=canvas.yview
         )
@@ -524,20 +564,6 @@ class Flashcard:
         scrollbar.pack(
             side=tk.RIGHT,
             fill=tk.Y
-        )
-
-        # =========================
-        # Word
-        # =========================
-
-        word_label = tk.Label(
-            info_frame,
-            text=vocabulary.word,
-            font=("Arial", 24, "bold")
-        )
-
-        word_label.pack(
-            pady=(10, 20)
         )
 
         # =========================
@@ -577,7 +603,7 @@ class Flashcard:
                 font=("Arial", 11),
                 anchor="w",
                 justify=tk.LEFT,
-                wraplength=1000
+                wraplength=600
             )
 
             value_label.pack(
@@ -586,32 +612,78 @@ class Flashcard:
                 expand=True
             )
 
+        # =========================
+        # Right side - Image
+        # =========================
+
+        image_frame = tk.Frame(
+            main_frame,
+            width=500,
+            height=400,
+            relief=tk.GROOVE,
+            borderwidth=2
+        )
+
+        image_frame.pack(
+            side=tk.RIGHT,
+            padx=(20, 0)
+        )
+
+        image_frame.pack_propagate(
+            False
+        )
+
+        self.current_image = self.load_image(vocabulary)
+
+        if self.current_image is not None:
+            image_label = tk.Label(
+                image_frame,
+                image=self.current_image
+            )
+
+            image_label.pack(
+                expand=True
+            )
+
+        else:
+            choose_image_button = tk.Button(
+                image_frame,
+                text="Choose Image",
+                command=lambda: self.choose_image(
+                    vocabulary
+                )
+            )
+
+            choose_image_button.pack(expand=True)
+
+        # =========================
+        # Bottom controls
+        # =========================
+
         self.flip_button.config(
             text="Flip Back"
         )
 
         self.update_practice_button()
-
     def load_image(self, vocabulary):
         try:
-            image_url = self.image_search.search(
-                vocabulary.word
-            )
-
-            if not image_url:
-                return None
-
-            image_data = (
-                self.image_manager.download_image(
-                    image_url
+            image_path = (
+                self.image_manager.get_existing_image(
+                    vocabulary.id
                 )
             )
 
+            if image_path is None:
+                return None
+
             return self.image_manager.create_photo_image(
-                image_data
+                image_path,
+                max_width=500,
+                max_height=400
             )
 
-        except Exception:
+        except Exception as error:
+            print("IMAGE ERROR:", error)
             return None
     
     def flip(self):
@@ -649,4 +721,21 @@ class Flashcard:
 
         self.progress_label.config(
             text=f"{current} / {total}"
+        )
+        
+    def choose_image(self, vocabulary):
+        image_path = self.image_manager.select_and_save_image(
+            self.window,
+            vocabulary.id
+        )
+
+        if image_path is None:
+            return
+
+        print("IMAGE SAVED:", image_path)
+
+        messagebox.showinfo(
+            "Image Saved",
+            "Image saved successfully.",
+            parent=self.window
         )

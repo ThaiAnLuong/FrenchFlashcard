@@ -878,27 +878,5 @@
             "Ghi chú": "abcz"
         },
         "created_at": "2026-09-04T15:28:54.630723"
-    },
-    {
-        "id": "aec93cac-ab5e-4210-8e22-45f9e56e3f53",
-        "word": "chat",
-        "data": {
-            "Type": "-",
-            "Meaning VI": "-",
-            "Meaning EN": "-",
-            "Gender": "-",
-            "Masculine": "-",
-            "Feminine": "-",
-            "Plural": "-",
-            "Imparfait": "-",
-            "Past (PC)": "-",
-            "Present": "-",
-            "Futur simple": "-",
-            "Conditionnel": "-",
-            "Example (FR)": "-",
-            "Example (VI)": "-",
-            "Ghi chú": "abc"
-        },
-        "created_at": "2026-09-04T16:30:50.002044"
     }
 ]
