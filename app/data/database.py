@@ -16,7 +16,8 @@ class VocabularyDatabase:
                 "id": vocabulary.id,
                 "word": vocabulary.word,
                 "data": vocabulary.data,
-                "created_at": vocabulary.created_at
+                "created_at": vocabulary.created_at,
+                "updated_at": vocabulary.updated_at
             })
 
         folder = os.path.dirname(self.file_path)
@@ -25,12 +26,7 @@ class VocabularyDatabase:
             os.makedirs(folder, exist_ok=True)
 
         with open(self.file_path, "w", encoding="utf-8") as file:
-            json.dump(
-                data,
-                file,
-                ensure_ascii=False,
-                indent=4
-            )
+            json.dump(data, file, ensure_ascii=False, indent=4)
 
     def load(self):
         if not os.path.exists(self.file_path):
@@ -44,11 +40,11 @@ class VocabularyDatabase:
         for item in data:
             vocabulary = Vocabulary(
                 word=item["word"],
-                data=item["data"],
+                data=item.get("data", {}),
                 vocabulary_id=item.get("id"),
-                created_at=item.get("created_at")
+                created_at=item.get("created_at"),
+                updated_at=item.get("updated_at") or item.get("created_at")
             )
-
             vocabulary_list.append(vocabulary)
 
         return vocabulary_list

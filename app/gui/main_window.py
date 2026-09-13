@@ -3,6 +3,7 @@ from tkinter import filedialog, messagebox
 
 from app.gui.vocabulary_list import VocabularyList
 from app.gui.vocabulary_input import VocabularyInput
+from app.services.backup_manager import BackupManager
 
 
 class MainWindow:
@@ -10,6 +11,7 @@ class MainWindow:
         self.root = root
         self.manager = manager
         self.settings = settings
+        self.backup_manager = BackupManager()
 
         self.root.title("French Flashcard")
         self.root.geometry("1000x700+500+100")
@@ -62,6 +64,28 @@ class MainWindow:
             pady=10
         )
 
+        export_button = tk.Button(
+            self.root,
+            text="Export Backup (.zip)",
+            width=25,
+            command=self.export_backup
+        )
+
+        export_button.pack(
+            pady=10
+        )
+
+        import_button = tk.Button(
+            self.root,
+            text="Import Backup (.zip)",
+            width=25,
+            command=self.import_backup
+        )
+
+        import_button.pack(
+            pady=10
+        )
+
     def open_vocabulary_list(self):
         VocabularyList(
             self.root,
@@ -97,6 +121,71 @@ class MainWindow:
                 f"{count} vocabulary item(s) imported successfully."
             )
 
+        except Exception as error:
+            messagebox.showerror(
+                "Import Error",
+                str(error)
+            )
+
+    def export_backup(self):
+        file_path = filedialog.asksaveasfilename(
+            title="Export FrenchFlashcard Backup",
+            defaultextension=".zip",
+            filetypes=[
+                ("FrenchFlashcard Backup", "*.zip"),
+                ("ZIP Files", "*.zip")
+            ]
+        )
+
+        if not file_path:
+            return
+
+        try:
+            self.manager.save()
+            self.backup_manager.export_backup(file_path)
+
+            messagebox.showinfo(
+                "Export Complete",
+                "FrenchFlashcard backup exported successfully."
+            )
+        except Exception as error:
+            messagebox.showerror(
+                "Export Error",
+                str(error)
+            )
+
+    def import_backup(self):
+        file_path = filedialog.askopenfilename(
+            title="Select FrenchFlashcard Backup",
+            filetypes=[
+                ("FrenchFlashcard Backup", "*.zip"),
+                ("ZIP Files", "*.zip")
+            ]
+        )
+
+        if not file_path:
+            return
+
+        try:
+            backup_file = self.backup_manager.create_pre_import_backup()
+
+            result = self.backup_manager.import_backup(
+                file_path,
+                self.manager,
+                self.settings
+            )
+
+            messagebox.showinfo(
+                "Import Complete",
+                (
+                    "Backup merged successfully.\n\n"
+                    f"Added: {result['added']}\n"
+                    f"Updated: {result['updated']}\n"
+                    f"Deleted: {result['deleted']}\n"
+                    f"Skipped: {result['skipped']}\n\n"
+                    f"Safety backup: {backup_file}"
+                )
+            )
         except Exception as error:
             messagebox.showerror(
                 "Import Error",

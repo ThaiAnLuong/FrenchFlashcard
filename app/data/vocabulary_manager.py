@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from app.data.csv_handler import load_csv
 
 
@@ -5,6 +7,7 @@ class VocabularyManager:
     def __init__(self, database):
         self.vocabulary_list = []
         self.database = database
+        self.deleted_records = {}
 
         self.field_names = [
             "Type",
@@ -30,6 +33,7 @@ class VocabularyManager:
     def delete(self, vocabulary):
         if vocabulary in self.vocabulary_list:
             self.vocabulary_list.remove(vocabulary)
+            self.deleted_records[vocabulary.id] = datetime.now().isoformat()
 
     def edit(self, vocabulary, word=None, data=None):
         if vocabulary not in self.vocabulary_list:
@@ -40,6 +44,8 @@ class VocabularyManager:
 
         if data is not None:
             vocabulary.data = data
+
+        vocabulary.updated_at = datetime.now().isoformat()
 
     def get_all(self):
         return self.vocabulary_list
@@ -67,28 +73,19 @@ class VocabularyManager:
         self.vocabulary_list = vocabulary_list
 
     def save(self):
-        self.database.save(
-            self.vocabulary_list
-        )
+        self.database.save(self.vocabulary_list)
 
     def load(self):
         vocabulary_list = self.database.load()
-
-        self.replace_all(
-            vocabulary_list
-        )
+        self.replace_all(vocabulary_list)
 
     def import_csv(self, file_path):
-        vocabulary_list, field_names = load_csv(
-            file_path
-        )
+        vocabulary_list, field_names = load_csv(file_path)
 
         for vocabulary in vocabulary_list:
             self.add(vocabulary)
 
-        # Only use fields defined by the current CSV.
         self.field_names = field_names
-
         self.save()
 
         return len(vocabulary_list)

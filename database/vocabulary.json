@@ -1,6 +1,6 @@
 [
     {
-        "id": "58402337-19de-4e68-878f-8e4464b5796d",
+        "id": "13dd4b79-6612-42bf-b922-f03ddf8184f1",
         "word": "une profession",
         "data": {
             "Type": "noun",
@@ -19,10 +19,11 @@
             "Example (VI)": "Anh ấy làm nghề y.",
             "Ghi chú": "-"
         },
-        "created_at": "2026-09-04T22:38:35.744341"
+        "created_at": "2026-09-13T17:01:44.480425",
+        "updated_at": "2026-09-13T17:01:44.480425"
     },
     {
-        "id": "596ea0ec-701c-48e7-b836-785824076c77",
+        "id": "1924895c-50f1-43ed-90ed-152f2da2f275",
         "word": "un acteur",
         "data": {
             "Type": "noun",
@@ -41,10 +42,11 @@
             "Example (VI)": "Diễn viên diễn rất tốt.",
             "Ghi chú": "-"
         },
-        "created_at": "2026-09-04T22:38:35.744386"
+        "created_at": "2026-09-13T17:01:44.480481",
+        "updated_at": "2026-09-13T17:01:44.480481"
     },
     {
-        "id": "8fbe0c78-599a-4a10-981a-ac9d96ba5afd",
+        "id": "532527d8-3546-4ef7-ab6f-a2f1c8c20c61",
         "word": "un styliste",
         "data": {
             "Type": "noun",
@@ -63,10 +65,11 @@
             "Example (VI)": "Nhà tạo mẫu thiết kế quần áo.",
             "Ghi chú": "-"
         },
-        "created_at": "2026-09-04T22:38:35.744398"
+        "created_at": "2026-09-13T17:01:44.480492",
+        "updated_at": "2026-09-13T17:01:44.480492"
     },
     {
-        "id": "bafac407-2229-4c75-a0b2-11978f88dee6",
+        "id": "12034a2a-16ad-42aa-bfa3-b69e211698a7",
         "word": "un chef",
         "data": {
             "Type": "noun",
@@ -85,10 +88,11 @@
             "Example (VI)": "Đầu bếp nấu ăn ngon.",
             "Ghi chú": "-"
         },
-        "created_at": "2026-09-04T22:38:35.744408"
+        "created_at": "2026-09-13T17:01:44.480500",
+        "updated_at": "2026-09-13T17:01:44.480500"
     },
     {
-        "id": "5c951874-b5e3-4c93-a6cd-3d32811444f2",
+        "id": "f81835ab-348a-4610-a263-14dae710ee97",
         "word": "un livre",
         "data": {
             "Type": "noun",
@@ -107,10 +111,11 @@
             "Example (VI)": "Tôi đọc một cuốn sách.",
             "Ghi chú": "-"
         },
-        "created_at": "2026-09-04T22:38:35.744415"
+        "created_at": "2026-09-13T17:01:44.480508",
+        "updated_at": "2026-09-13T17:01:44.480508"
     },
     {
-        "id": "32eb1c6b-1db0-489b-b9e2-08292dae1ae9",
+        "id": "179a526d-ac6f-42e7-8e52-df79765e915f",
         "word": "un auteur",
         "data": {
             "Type": "noun",
@@ -129,10 +134,11 @@
             "Example (VI)": "Tác giả viết tiểu thuyết.",
             "Ghi chú": "-"
         },
-        "created_at": "2026-09-04T22:38:35.744422"
+        "created_at": "2026-09-13T17:01:44.480517",
+        "updated_at": "2026-09-13T17:01:44.480517"
     },
     {
-        "id": "009f2ab5-81bd-4202-9323-4b8833ad7612",
+        "id": "a099106d-6e90-4b63-875a-2f2d9ee74403",
         "word": "une bouche",
         "data": {
             "Type": "noun",
@@ -151,10 +157,11 @@
             "Example (VI)": "Cô ấy có một cái miệng nhỏ.",
             "Ghi chú": "-"
         },
-        "created_at": "2026-09-04T22:38:35.744428"
+        "created_at": "2026-09-13T17:01:44.480525",
+        "updated_at": "2026-09-13T17:01:44.480525"
     },
     {
-        "id": "82d658f6-e581-4017-8966-44de42aceaa4",
+        "id": "d656fbd3-c736-4dc7-aaff-7dcffea8cbd8",
         "word": "une lèvre",
         "data": {
             "Type": "noun",
@@ -173,10 +180,11 @@
             "Example (VI)": "Môi cô ấy màu đỏ.",
             "Ghi chú": "-"
         },
-        "created_at": "2026-09-04T22:38:35.744434"
+        "created_at": "2026-09-13T17:01:44.480531",
+        "updated_at": "2026-09-13T17:01:44.480531"
     },
     {
-        "id": "7e03162a-2861-4d0e-802c-f4fe794d5f3b",
+        "id": "d9f11ccd-5c53-4f34-a8f4-3adcf03963fe",
         "word": "tiré",
         "data": {
             "Type": "adj",
@@ -195,10 +203,11 @@
             "Example (VI)": "Môi bị kéo căng.",
             "Ghi chú": "-"
         },
-        "created_at": "2026-09-04T22:38:35.744441"
+        "created_at": "2026-09-13T17:01:44.480538",
+        "updated_at": "2026-09-13T17:01:44.480538"
     },
     {
-        "id": "415d37cd-089a-4b56-a635-58345febff45",
+        "id": "0a202886-91b7-4dbf-89da-d1832946abe2",
         "word": "arrondi",
         "data": {
             "Type": "adj",
@@ -217,10 +226,11 @@
             "Example (VI)": "Một hình dạng tròn.",
             "Ghi chú": "-"
         },
-        "created_at": "2026-09-04T22:38:35.744447"
+        "created_at": "2026-09-13T17:01:44.480544",
+        "updated_at": "2026-09-13T17:01:44.480544"
     },
     {
-        "id": "bdaf8d1f-eb7f-417a-9e4b-cecc9302689c",
+        "id": "71472692-b1fe-4287-8c4a-523ce51846b4",
         "word": "noir",
         "data": {
             "Type": "color",
@@ -239,10 +249,11 @@
             "Example (VI)": "Một chiếc váy đen.",
             "Ghi chú": "-"
         },
-        "created_at": "2026-09-04T22:38:35.744452"
+        "created_at": "2026-09-13T17:01:44.480551",
+        "updated_at": "2026-09-13T17:01:44.480551"
     },
     {
-        "id": "be0af6c2-1009-44da-9755-fe2d1e7e8584",
+        "id": "0013b3eb-4dd3-4d0c-93a6-8defdba936a6",
         "word": "blanc",
         "data": {
             "Type": "color",
@@ -261,10 +272,11 @@
             "Example (VI)": "Một con mèo trắng.",
             "Ghi chú": "-"
         },
-        "created_at": "2026-09-04T22:38:35.744458"
+        "created_at": "2026-09-13T17:01:44.480557",
+        "updated_at": "2026-09-13T17:01:44.480557"
     },
     {
-        "id": "05a53d0c-4192-489c-88e9-7bf3ab27db29",
+        "id": "70bed42a-bbe3-4b1d-be14-7bf597e19553",
         "word": "rouge",
         "data": {
             "Type": "color",
@@ -283,10 +295,11 @@
             "Example (VI)": "Một chiếc xe màu đỏ.",
             "Ghi chú": "masc = fem"
         },
-        "created_at": "2026-09-04T22:38:35.744464"
+        "created_at": "2026-09-13T17:01:44.480564",
+        "updated_at": "2026-09-13T17:01:44.480564"
     },
     {
-        "id": "4fb8d954-2328-4a0c-9184-e36601a7c513",
+        "id": "972998c7-30b5-42ef-aa87-162a1f69977c",
         "word": "rose",
         "data": {
             "Type": "color",
@@ -305,10 +318,11 @@
             "Example (VI)": "Một chiếc váy màu hồng.",
             "Ghi chú": "masc = fem"
         },
-        "created_at": "2026-09-04T22:38:35.744470"
+        "created_at": "2026-09-13T17:01:44.480572",
+        "updated_at": "2026-09-13T17:01:44.480572"
     },
     {
-        "id": "a5756485-2bb7-4fdc-83bc-fedc5bdc0225",
+        "id": "428da923-dd94-480c-977a-6fd91f4b3f43",
         "word": "bleu",
         "data": {
             "Type": "color",
@@ -327,10 +341,11 @@
             "Example (VI)": "Bầu trời xanh.",
             "Ghi chú": "-"
         },
-        "created_at": "2026-09-04T22:38:35.744476"
+        "created_at": "2026-09-13T17:01:44.480577",
+        "updated_at": "2026-09-13T17:01:44.480577"
     },
     {
-        "id": "c20668c3-7320-4450-870c-ec16bab0a861",
+        "id": "dc382963-af17-434a-b79b-9a911a499e70",
         "word": "vert",
         "data": {
             "Type": "color",
@@ -349,10 +364,11 @@
             "Example (VI)": "Cây xanh.",
             "Ghi chú": "-"
         },
-        "created_at": "2026-09-04T22:38:35.744483"
+        "created_at": "2026-09-13T17:01:44.480584",
+        "updated_at": "2026-09-13T17:01:44.480584"
     },
     {
-        "id": "cd80dbf2-5a0d-410b-a915-044acb24e128",
+        "id": "88a8cc6e-70bb-4d8c-9042-7a0d9d8ec365",
         "word": "jaune",
         "data": {
             "Type": "color",
@@ -371,10 +387,11 @@
             "Example (VI)": "Một cái túi màu vàng.",
             "Ghi chú": "masc = fem"
         },
-        "created_at": "2026-09-04T22:38:35.744488"
+        "created_at": "2026-09-13T17:01:44.480589",
+        "updated_at": "2026-09-13T17:01:44.480589"
     },
     {
-        "id": "80a101fe-8c42-40d6-b0f4-e6bc58bc3e2b",
+        "id": "dc7a6f1e-679c-4c20-b41a-8c4da1437dd9",
         "word": "orange",
         "data": {
             "Type": "color",
@@ -393,10 +410,11 @@
             "Example (VI)": "Một quả màu cam.",
             "Ghi chú": "invariable"
         },
-        "created_at": "2026-09-04T22:38:35.744494"
+        "created_at": "2026-09-13T17:01:44.480595",
+        "updated_at": "2026-09-13T17:01:44.480595"
     },
     {
-        "id": "ce512b7d-44f1-425a-96a6-723791ef59a9",
+        "id": "b1e4c6cd-6044-4ad2-b783-f58c2091e2c2",
         "word": "violet",
         "data": {
             "Type": "color",
@@ -415,10 +433,11 @@
             "Example (VI)": "Một bông hoa tím.",
             "Ghi chú": "-"
         },
-        "created_at": "2026-09-04T22:38:35.744499"
+        "created_at": "2026-09-13T17:01:44.480600",
+        "updated_at": "2026-09-13T17:01:44.480600"
     },
     {
-        "id": "d659d84d-cf41-485a-8fab-6b68a1ed342a",
+        "id": "26245727-7e15-4724-acfd-df850f15c18d",
         "word": "gris",
         "data": {
             "Type": "color",
@@ -437,10 +456,11 @@
             "Example (VI)": "Một cái quần xám.",
             "Ghi chú": "masc singulier = pluriel"
         },
-        "created_at": "2026-09-04T22:38:35.744504"
+        "created_at": "2026-09-13T17:01:44.480605",
+        "updated_at": "2026-09-13T17:01:44.480605"
     },
     {
-        "id": "5bf54bec-fa21-4d73-9b28-4ac53aac8d92",
+        "id": "50682a79-e479-40d5-a908-4d0b0560a6e9",
         "word": "marron",
         "data": {
             "Type": "color",
@@ -459,10 +479,11 @@
             "Example (VI)": "Một cái túi màu nâu.",
             "Ghi chú": "invariable"
         },
-        "created_at": "2026-09-04T22:38:35.744509"
+        "created_at": "2026-09-13T17:01:44.480610",
+        "updated_at": "2026-09-13T17:01:44.480610"
     },
     {
-        "id": "a4417994-623f-4487-a1bf-2030f5fd177e",
+        "id": "8b74861d-03b3-4a60-bda0-e6139457bfac",
         "word": "un photojournaliste",
         "data": {
             "Type": "noun",
@@ -481,10 +502,11 @@
             "Example (VI)": "-",
             "Ghi chú": "masc = fem"
         },
-        "created_at": "2026-09-04T22:38:35.744516"
+        "created_at": "2026-09-13T17:01:44.480625",
+        "updated_at": "2026-09-13T17:01:44.480625"
     },
     {
-        "id": "a26993a9-89c0-42de-b60a-9e3c90af8277",
+        "id": "8faa7072-95c6-43d4-9ca3-38d955e77caa",
         "word": "Le pays",
         "data": {
             "Type": "noun",
@@ -503,10 +525,11 @@
             "Example (VI)": "Đất nước này lớn.",
             "Ghi chú": "-"
         },
-        "created_at": "2026-09-04T22:38:35.744522"
+        "created_at": "2026-09-13T17:01:44.480631",
+        "updated_at": "2026-09-13T17:01:44.480631"
     },
     {
-        "id": "4063ffbd-5aff-4465-9598-e4ff234278fd",
+        "id": "63a472d8-f00b-41d3-ba30-ab66ba3d33bb",
         "word": "La nationalité",
         "data": {
             "Type": "noun",
@@ -525,10 +548,11 @@
             "Example (VI)": "Anh ấy có quốc tịch Canada.",
             "Ghi chú": "-"
         },
-        "created_at": "2026-09-04T22:38:35.744530"
+        "created_at": "2026-09-13T17:01:44.480637",
+        "updated_at": "2026-09-13T17:01:44.480637"
     },
     {
-        "id": "92279244-7f63-407f-9f81-e484303745a1",
+        "id": "cabece60-1b72-4f31-a541-19b5bb369739",
         "word": "Parmi",
         "data": {
             "Type": "preposition",
@@ -547,10 +571,11 @@
             "Example (VI)": "Trong số các học sinh, cô ấy trẻ nhất.",
             "Ghi chú": "-"
         },
-        "created_at": "2026-09-04T22:38:35.744536"
+        "created_at": "2026-09-13T17:01:44.480644",
+        "updated_at": "2026-09-13T17:01:44.480644"
     },
     {
-        "id": "09e79d0b-5530-4a43-8e18-8aa296e93ee3",
+        "id": "acabfa24-5c2e-405c-8ea3-56fdfdedfbe9",
         "word": "Une écrivaine",
         "data": {
             "Type": "noun",
@@ -569,10 +594,11 @@
             "Example (VI)": "Nữ nhà văn này nổi tiếng.",
             "Ghi chú": "-"
         },
-        "created_at": "2026-09-04T22:38:35.744543"
+        "created_at": "2026-09-13T17:01:44.480652",
+        "updated_at": "2026-09-13T17:01:44.480652"
     },
     {
-        "id": "b2252bd4-214a-4d91-952d-c512d666c02e",
+        "id": "6af89c4a-3fc1-4272-bdc4-7e3f463c52ac",
         "word": "Une réalisatrice",
         "data": {
             "Type": "noun",
@@ -591,10 +617,11 @@
             "Example (VI)": "Nữ đạo diễn làm việc ở Paris.",
             "Ghi chú": "-"
         },
-        "created_at": "2026-09-04T22:38:35.744549"
+        "created_at": "2026-09-13T17:01:44.480659",
+        "updated_at": "2026-09-13T17:01:44.480659"
     },
     {
-        "id": "7f091459-b30e-4bda-947a-2dca6b4a53a1",
+        "id": "3dc19efa-5e32-4aca-99b8-6400130b431a",
         "word": "L’âge",
         "data": {
             "Type": "noun",
@@ -613,10 +640,11 @@
             "Example (VI)": "Tuổi tác quan trọng ở đây.",
             "Ghi chú": "-"
         },
-        "created_at": "2026-09-04T22:38:35.744555"
+        "created_at": "2026-09-13T17:01:44.480665",
+        "updated_at": "2026-09-13T17:01:44.480665"
     },
     {
-        "id": "f687eba8-5478-40f8-8a4f-27be3b0bf979",
+        "id": "91ecc1af-c8ba-4cda-bdaa-babf81816af5",
         "word": "Un an",
         "data": {
             "Type": "noun",
@@ -635,10 +663,11 @@
             "Example (VI)": "Anh ấy 20 tuổi.",
             "Ghi chú": "-"
         },
-        "created_at": "2026-09-04T22:38:35.744560"
+        "created_at": "2026-09-13T17:01:44.480670",
+        "updated_at": "2026-09-13T17:01:44.480670"
     },
     {
-        "id": "a46c8c67-1a4f-49ae-ab90-041deee86649",
+        "id": "8c280d27-85c0-4e65-af49-bb4839f4b792",
         "word": "Un mois",
         "data": {
             "Type": "noun",
@@ -657,10 +686,11 @@
             "Example (VI)": "Khóa học kéo dài một tháng.",
             "Ghi chú": "-"
         },
-        "created_at": "2026-09-04T22:38:35.744565"
+        "created_at": "2026-09-13T17:01:44.480677",
+        "updated_at": "2026-09-13T17:01:44.480677"
     },
     {
-        "id": "cd089ee6-4c3c-4942-b1b2-73214d05d74f",
+        "id": "f1e37c97-8849-4629-bca1-cea15236df3f",
         "word": "Heureux / heureuse",
         "data": {
             "Type": "adj",
@@ -679,10 +709,11 @@
             "Example (VI)": "Hôm nay cô ấy vui.",
             "Ghi chú": "-"
         },
-        "created_at": "2026-09-04T22:38:35.744571"
+        "created_at": "2026-09-13T17:01:44.480683",
+        "updated_at": "2026-09-13T17:01:44.480683"
     },
     {
-        "id": "1024a050-5cc9-447a-b80d-11c6ba5e6cc6",
+        "id": "c4c3452b-3c72-4a27-8096-21482cb5c2b2",
         "word": "Triste",
         "data": {
             "Type": "adj",
@@ -701,10 +732,11 @@
             "Example (VI)": "Anh ấy có vẻ buồn.",
             "Ghi chú": "-"
         },
-        "created_at": "2026-09-04T22:38:35.744576"
+        "created_at": "2026-09-13T17:01:44.480688",
+        "updated_at": "2026-09-13T17:01:44.480688"
     },
     {
-        "id": "78fd9e21-faac-4ad2-aac3-f56546041f0b",
+        "id": "62e561c1-4916-4600-86d4-f7b8a318304e",
         "word": "Content(e)",
         "data": {
             "Type": "adj",
@@ -723,10 +755,11 @@
             "Example (VI)": "Chúng tôi hài lòng.",
             "Ghi chú": "-"
         },
-        "created_at": "2026-09-04T22:38:35.744582"
+        "created_at": "2026-09-13T17:01:44.480694",
+        "updated_at": "2026-09-13T17:01:44.480694"
     },
     {
-        "id": "ecd2fb0e-067c-4c18-ac23-ef5685f444fd",
+        "id": "12f48ef7-1357-4af1-b2ae-4890e3b8d4b1",
         "word": "Être en forme",
         "data": {
             "Type": "expression",
@@ -745,10 +778,11 @@
             "Example (VI)": "Hôm nay tôi khỏe.",
             "Ghi chú": "-"
         },
-        "created_at": "2026-09-04T22:38:35.744588"
+        "created_at": "2026-09-13T17:01:44.480700",
+        "updated_at": "2026-09-13T17:01:44.480700"
     },
     {
-        "id": "d6f11512-5369-413c-b2a5-67b499fabe54",
+        "id": "7f7b7bc3-db96-4e4f-b90f-be34cd124476",
         "word": "Chaud",
         "data": {
             "Type": "adj",
@@ -767,10 +801,11 @@
             "Example (VI)": "Mùa hè trời nóng.",
             "Ghi chú": "le chaud (n, m)/ les chauds"
         },
-        "created_at": "2026-09-04T22:38:35.744594"
+        "created_at": "2026-09-13T17:01:44.480707",
+        "updated_at": "2026-09-13T17:01:44.480707"
     },
     {
-        "id": "1e6bc748-fed7-4e25-8ce2-ccfef231cd1b",
+        "id": "6ca34d49-59ca-43fd-b68a-3b054bdffac0",
         "word": "Faim",
         "data": {
             "Type": "noun",
@@ -789,10 +824,11 @@
             "Example (VI)": "Bây giờ tôi đói.",
             "Ghi chú": "-"
         },
-        "created_at": "2026-09-04T22:38:35.744600"
+        "created_at": "2026-09-13T17:01:44.480717",
+        "updated_at": "2026-09-13T17:01:44.480717"
     },
     {
-        "id": "15c8fbda-8824-483f-a9a8-68f97f728311",
+        "id": "679f12e2-a039-4be6-a68f-f1fa0fec4432",
         "word": "Froid",
         "data": {
             "Type": "adj",
@@ -811,10 +847,11 @@
             "Example (VI)": "Nước lạnh.",
             "Ghi chú": "le froid(n, m) - cái lạnh"
         },
-        "created_at": "2026-09-04T22:38:35.744605"
+        "created_at": "2026-09-13T17:01:44.480723",
+        "updated_at": "2026-09-13T17:01:44.480723"
     },
     {
-        "id": "3dd9ddc3-0847-4996-bd2b-ec0fd0cac6c8",
+        "id": "13630927-1e3f-41d1-bdee-eefd6f4cb122",
         "word": "Soif",
         "data": {
             "Type": "noun",
@@ -833,10 +870,11 @@
             "Example (VI)": "Cô ấy khát sau khi chơi thể thao.",
             "Ghi chú": "-"
         },
-        "created_at": "2026-09-04T22:38:35.744611"
+        "created_at": "2026-09-13T17:01:44.480728",
+        "updated_at": "2026-09-13T17:01:44.480728"
     },
     {
-        "id": "b6522fa4-95b8-42ec-80c2-44bace0d64e1",
+        "id": "96fc6031-e7b9-493e-9116-9b8a45624448",
         "word": "Un architecte",
         "data": {
             "Type": "noun",
@@ -855,10 +893,11 @@
             "Example (VI)": "Kiến trúc sư thiết kế một ngôi nhà.",
             "Ghi chú": "-"
         },
-        "created_at": "2026-09-04T22:38:35.744617"
+        "created_at": "2026-09-13T17:01:44.480734",
+        "updated_at": "2026-09-13T17:01:44.480734"
     },
     {
-        "id": "e9199601-1caa-489a-b5b1-f2064a95462a",
+        "id": "02f0686d-5485-427b-a43a-0da1af61978b",
         "word": "Un pâtissier / une pâtissière",
         "data": {
             "Type": "noun",
@@ -877,10 +916,11 @@
             "Example (VI)": "Người thợ làm bánh chuẩn bị một chiếc bánh.",
             "Ghi chú": "-"
         },
-        "created_at": "2026-09-04T22:38:35.744624"
+        "created_at": "2026-09-13T17:01:44.480739",
+        "updated_at": "2026-09-13T17:01:44.480739"
     },
     {
-        "id": "6443f118-26a8-4074-9b95-5bd478046b90",
+        "id": "e98d5281-73fb-4a42-8bb8-7ccfbdc8475d",
         "word": "Un objet",
         "data": {
             "Type": "noun",
@@ -899,10 +939,11 @@
             "Example (VI)": "Đó là một đồ vật quan trọng.",
             "Ghi chú": "-"
         },
-        "created_at": "2026-09-04T22:38:35.744632"
+        "created_at": "2026-09-13T17:01:44.480748",
+        "updated_at": "2026-09-13T17:01:44.480748"
     },
     {
-        "id": "ab9347f7-cafc-4a0f-a9b0-7df186dd1803",
+        "id": "b05804b0-3107-4212-8160-68b337efbc4e",
         "word": "Un stylo",
         "data": {
             "Type": "noun",
@@ -921,6 +962,7 @@
             "Example (VI)": "Tôi viết bằng bút mực.",
             "Ghi chú": "-"
         },
-        "created_at": "2026-09-04T22:38:35.744639"
+        "created_at": "2026-09-13T17:01:44.480753",
+        "updated_at": "2026-09-13T17:01:44.480753"
     }
 ]
