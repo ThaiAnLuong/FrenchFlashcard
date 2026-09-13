@@ -1,0 +1,13 @@
+Nếu muốn build sạch hoàn toàn khi đã thay đổi code khá nhiều:
+
+powershell
+Remove-Item -Recurse -Force build, dist
+
+
+
+cmd
+rm -rf build dist
+
+
+
+./.venv/bin/python -m PyInstaller --noconfirm --windowed --name FrenchFlashcard main.py
